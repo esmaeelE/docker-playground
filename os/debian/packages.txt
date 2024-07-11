@@ -1,0 +1,7 @@
+curl
+tar
+unzip
+rsync
+procps
+vim
+tmux
