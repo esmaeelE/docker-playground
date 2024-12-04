@@ -8,6 +8,9 @@ docker rmi
 ```
 ## Install
 
+* https://stackoverflow.com/a/78488094/7508077
+* https://wiki.ubuntu-ir.org/index.php?title=Docker&redirect=no
+
 # Install docker on Debian stable The correct way
 
  ## Debian Based
