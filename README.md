@@ -21,4 +21,3 @@ Docker basic
 * pgsql
 * mongoDB
 * selenium
-* 
