@@ -25,7 +25,6 @@ docker rmi
 $ docker ps
 ```
 
-
 ## Test Installation
 ```
 $ id -nG
@@ -33,9 +32,6 @@ $ groups ${USER}
 
 $ docker run hello-world
 ```
-
-
-
 
 ## run
 ```
@@ -76,18 +72,24 @@ docker stats
 ```
 docker container ls
 docker container inspect container_name or container_id
+
 docker stop
 docker start
+docker stats
 docker restart
+
 docker ps
 docker ps -a
-docker logs
+
 docker run
+docker logs
 docker exec
+
 docker pause
 docker wait
 docker export
 docker rename
+
 # Clean UP
 docker rm
 docker rmi
@@ -141,12 +143,26 @@ docker kill
 ```
 docker service ls
 docker service ps
-docker service crate
+docker service create
 docker service update
-docker service scale
 docker service scale
 docker service logs
 docker stack services
+```
+
+# Mis
+```
+docker save
+docker load
+
+docker rm
+docker rmi
+docker kill
+docker prune
+
+# Clean UP (God mode)
+docker system prune -f
+
 ```
 
 ## Daily usage commands
