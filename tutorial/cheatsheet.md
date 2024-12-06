@@ -160,6 +160,8 @@ docker rmi
 docker kill
 docker prune
 
+docker logs -f ${container_name}
+
 # Clean UP (God mode)
 docker system prune -f
 
