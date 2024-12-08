@@ -189,3 +189,8 @@ or on create container
 --restart=always not at last
 ```
 
+## inspect image
+```
+docker inspect debian:stable-20241202  --format '{{ .Os }}/{{ .Architecture }}'
+```
+
