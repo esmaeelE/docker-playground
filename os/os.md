@@ -24,6 +24,18 @@ docker run -it -d --name rucky rockylinux:9.3.20231119-minimal  bash
 docker run -it -d --name rucky redhat/ubi9 bash
 ```
 
+## Alpine
+
+```
+docker run -it -d --name alpine alpine bash
+```
+
+## busybox
+```
+docker run -it -d --name busybux busybox
+```
+
+
 ## Attach/Detach
 ```
 docker attach debian_x86
