@@ -21,7 +21,7 @@ docker run -it -d --name rucky rockylinux:9.3.20231119-minimal  bash
 ## RHEL
 
 ```
-docker run -it -d --name rucky redhat/ubi9 bash
+docker run -it -d --name redhat redhat/ubi9 bash
 ```
 
 ## Alpine
