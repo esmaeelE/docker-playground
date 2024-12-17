@@ -1,5 +1,8 @@
 # Dockerize OS to build development environment
 
+Use default official image from dockerhub
+
+
 ## Debian
 ```
 docker run -it -d --name debian_os  bash
