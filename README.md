@@ -1,6 +1,9 @@
 # docker-playground
 Docker basic
 
+[docker hub](hub.docker.com)
+
+run all freq images.
 
 ## Docker playground
 
