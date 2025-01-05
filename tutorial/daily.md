@@ -38,3 +38,8 @@ docker compose build
 docker compose up -d 
 docker compose down -v
 ```
+## Find base image 
+```
+docker image history image_name
+```
+
