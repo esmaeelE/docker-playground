@@ -49,5 +49,3 @@ ctrP, ctrQ
 
 Consider adding `--rm` to above comamnds remove container after exit.
 
-
-
