@@ -2,7 +2,6 @@
 
 Use default official image from dockerhub
 
-
 ## Debian
 ```
 docker run -it -d --name debian_os  bash
@@ -41,4 +40,8 @@ docker run -it -d --name busybux busybox
 docker attach debian_x86
 ctrP, ctrQ
 ```
+
+Consider adding `--rm` to above comamnds remove container after exit.
+
+
 
