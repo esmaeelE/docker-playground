@@ -16,6 +16,12 @@ docker run -it -d --name debian_arm --platform linux/arm/v7 debian:armv7  bash
 ```
 docker run -it -d --name rucky rockylinux:9.3.20231119-minimal  bash
 ```
+## GUIX
+
+```
+docker run -it -d --name guix metacall/guix
+```
+Use `guix` package manger inside container
 
 ## RHEL
 
