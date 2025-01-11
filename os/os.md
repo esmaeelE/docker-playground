@@ -40,6 +40,10 @@ docker run -it -d --name alpine alpine bash
 docker run -it -d --name busybux busybox
 ```
 
+## kalilinux
+```
+docker run -it -d --name kali kalilinux/kali-rolling
+```
 
 ## Attach/Detach
 ```
