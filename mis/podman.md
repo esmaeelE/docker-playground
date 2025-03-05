@@ -12,3 +12,8 @@ podman default location to save images
 /home/user/.local/share/containers
 ```
 
+## Install debian
+```
+$ sudo apt install podman-compose podman podman-toolbox
+```
+
