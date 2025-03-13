@@ -11,3 +11,6 @@ chmod +x download-frozen-image-v2.sh; mv download-frozen-image-v2.sh /usr/local/
 ## Usage
 ```dn_docker hello hello-world:latest```
 
+### load image
+```tar -cvC hello . | docker load```
+
