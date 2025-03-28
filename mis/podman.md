@@ -17,3 +17,9 @@ podman default location to save images
 $ sudo apt install podman-compose podman podman-toolbox
 ```
 
+## Rootless podman run on port 80 the dirty way
+
+```
+echo "net.ipv4.ip_unprivileged_port_start=80" >> /etc/sysctl.conf
+sysctl -p
+```
