@@ -41,6 +41,7 @@ Use `guix` package manger inside container
 
 ```
 docker run -it -d --name redhat redhat/ubi9 bash
+docker run -it -d --name redhat redhat/ubi10-minimal bash
 ```
 
 Run command on running container
