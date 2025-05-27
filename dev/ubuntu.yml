@@ -1,0 +1,12 @@
+---
+services:
+  ubuntu_container:
+    container_name: ubuntu_container
+    image: ubuntu:latest
+    tty: true # Keep the container running in the foreground
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '8080:8080' # Public HTTP Port
+      - '2222:22' # Public HTTPS Port
+

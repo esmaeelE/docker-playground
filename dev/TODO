@@ -1,0 +1,8 @@
+TODO
+- add desired packages to images
+- make it more usable
+- save image on local image registry and push to public
+- write script to automate works
+- create django development image
+
+
