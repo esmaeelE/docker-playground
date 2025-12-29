@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # first run
 # init
