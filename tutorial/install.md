@@ -20,7 +20,7 @@ sudo usermod -aG docker ${USER}
 
 ## Test
 ```
-docker ps 
+docker ps
 
 docker pull hello-world
 
@@ -30,5 +30,3 @@ docker run -it hello-world
 
 ## FreeBSD equivalent
 jail, run on debootstrap
-
-

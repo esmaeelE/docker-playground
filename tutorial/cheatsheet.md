@@ -1,10 +1,10 @@
 # Docker cheatsheet
 ```
-docker ps 
+docker ps
 docker ps -a
 docker image ls
 docker images
-docker rmi 
+docker rmi
 ```
 ## Install
 
@@ -14,7 +14,7 @@ docker rmi
 # Install docker on Debian stable The correct way
 
  ## Debian Based
- 
+
  ```
  $ sudo apt install docker.io docker-compose
  $ sudo usermod -aG docker ${USER}
@@ -44,8 +44,8 @@ Tab to see all commands
 
 ```
 attach     config     create     export     images     kill       logs       pause      pull       rm         search     start      system     unpause    wait
-build      container  diff       help       import     load       manifest   plugin     push       rmi        secret     stats      tag        update     
-builder    context    events     history    info       login      network    port       rename     run        service    stop       top        version    
+build      container  diff       help       import     load       manifest   plugin     push       rmi        secret     stats      tag        update
+builder    context    events     history    info       login      network    port       rename     run        service    stop       top        version
 commit     cp         exec       image      inspect    logout     node       ps         restart    save       stack      swarm      trust      volume
 ```
 
@@ -57,7 +57,7 @@ commit     cp         exec       image      inspect    logout     node       ps 
 docker info
 docker version
 
-docker system info 
+docker system info
 docker system df
 docker system prune
 
@@ -132,11 +132,11 @@ docker port container_name or container_ip
 
 ### volume
 ```
-docker volume ls 
+docker volume ls
 docker volume inspect volume_name
 docker volume create
 docker volume rm
-docker kill 
+docker kill
 ```
 
 ### Service

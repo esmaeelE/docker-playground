@@ -20,7 +20,7 @@ A Container have no idea about infrastructure
 
 
 cgroup: constrain on storage, CPU, I/O
-namespace: 
+namespace:
 
 ACL lpic
 
@@ -32,7 +32,7 @@ ACL lpic
 * Host: Remove network isolation between host and container
 * Bridge: Default
 * MacVlan: assign a MAC Address to container
-* IPVlan: 
+* IPVlan:
 * Overlay
 ---
 
@@ -41,8 +41,6 @@ ACL lpic
 # Kubernetes
 
 Container Orchestration
-* Docker swarm 
+* Docker swarm
 * Kubernetes
 Minikube: Single node Kuber Cluster, Run on local machine.
-
-

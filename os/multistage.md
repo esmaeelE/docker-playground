@@ -10,6 +10,3 @@ CMD gcc --version
 # Create stage2
 FROM builder as stage2
 CMD gcc --version
-
-
-

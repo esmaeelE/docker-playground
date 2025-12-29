@@ -1,12 +1,43 @@
----
 services:
   ubuntu_container:
+    # start our init script
+    # command: ["sh", "-c", "./startup.sh"]
     container_name: ubuntu_container
-    image: ubuntu:latest
-    tty: true # Keep the container running in the foreground
+    # image: ubuntu:latest
+    # image: ubuntu_container:working
+    image: ssh-container
+    stdin_open: true # docker run -i
+    tty: true # docker run -t, Keep the container running in the foreground
     restart: unless-stopped
     ports:
       # These ports are in format <host-port>:<container-port>
-      - '8080:8080' # Public HTTP Port
-      - '2222:22' # Public HTTPS Port
+      - "8080:8080" # Public HTTP Port
+      - "2222:22" # Public HTTPS Port
+    healthcheck:
+      test: ["CMD", "sh", "-c", "ls /"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+#    volumes:
+#      - ./container/bin:/bin
+#      - ./container/boot:/boot
+#      - ./container/dev:/dev
+#      - ./container/etc:/etc
+#      - ./container/home:/home
+#      - ./container/lib:/lib
+#      - ./container/lib64:/lib64
+#      - ./container/media:/media
+#      - ./container/mnt:/mnt
+#      - ./container/opt:/opt
+#      - ./container/proc:/proc
+#      - ./container/root:/root
+#      - ./container/run:/run
+#      - ./container/sbin:/sbin
+#      - ./container/srv:/srv
+#      - ./container/sys:/sys
+#      - ./container/tmp:/tmp
+#      - ./container/usr:/usr
+#      - ./container/var:/var
 
+# how to attach and run terminal
+# docker attach ubuntu_container

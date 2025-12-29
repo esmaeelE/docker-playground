@@ -1,0 +1,15 @@
+---
+services:
+  debian:
+    container_name: debian-stable
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+# This run inside container
+#    command: >
+#      bash -c "podman attach --detach-keys=ctrl-d"
+
+# podman compose run debian
+
+# run compose to build and run separately

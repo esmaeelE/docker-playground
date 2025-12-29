@@ -1,4 +1,5 @@
 # Podman
+
 Better docker
 
 ## Links
@@ -6,12 +7,12 @@ Better docker
 * [docs](https://docs.podman.io/en/latest/Introduction.html)
 * [Get started](https://podman.io/get-started)
 
-
 # Podman containerization
 
 ## Install
 
 Just run below commands
+
 ```
 $ sudo apt install podman podman-compose
 $ mkdir -p ~/.config/containers/
@@ -20,8 +21,9 @@ unqualified-search-registries = ["docker.io"]
 ```
 
 ## Test
+
 ```
-$ podman version 
+$ podman version
 Client:       Podman Engine
 Version:      4.3.1
 API Version:  4.3.1
@@ -33,16 +35,18 @@ OS/Arch:      linux/amd64
 $ podman run hello-world:latest
 
 ```
+
 Time is wrong, why?
 
-## Set registry and Iran mirros.
-```
-```
+## Set registry and Iran mirros
 
+```
+```
 
 # Info
+
 ```
-$ podman info 
+$ podman info
 host:
   arch: amd64
   buildahVersion: 1.28.2
@@ -178,15 +182,16 @@ version:
   Version: 4.3.1
 
 ```
+
 # add new registery
+
 ```
 $ cat /etc/containers/registries.conf
 unqualified-search-registries = ["docker.io"]
 ```
 
-
-
 ## change default storage location
+
 podman save containers images and volume in $HOME of running user. we can change it.
 for example I placed them in `/var/container/`
 
@@ -225,8 +230,8 @@ $ cat ~/.config/containers/storage.conf
       xfs_nospace_max_retries = ""
 ```
 
-
 # Systemd Service auto run on startup
+
 ```
 Automate with systemd service
 
@@ -237,5 +242,5 @@ cp mariadb.service ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable mariadb.service
 systemctl --user start mariadb.service
-systemctl --user status mariadb.service 
+systemctl --user status mariadb.service
 ```

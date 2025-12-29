@@ -6,9 +6,9 @@ $ docker exec -it container_name bash
 ```
 
 
-## run docker on server restart 
+## run docker on server restart
 
-update running docker container 
+update running docker container
 
 `$ docker update --restart=always 84e3c304cdfd`
 
@@ -29,17 +29,16 @@ docker inspect debian:stable-20241202  --format '{{ .Os }}/{{ .Architecture }}'
 
 ```
 docker save containername | gzip > container.tar.gz
-docker load -i container.tar.gz 
+docker load -i container.tar.gz
 ```
 
 ## Compose
 ```
 docker compose build
-docker compose up -d 
+docker compose up -d
 docker compose down -v
 ```
-## Find base image 
+## Find base image
 ```
 docker image history image_name
 ```
-

@@ -5,5 +5,4 @@ rsync
 procps
 vim
 tmux
-tree
-htop
+openssh-server

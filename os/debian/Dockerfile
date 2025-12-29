@@ -22,9 +22,11 @@ COPY packages.txt .
 #each one generate lighter image?
 
 #RUN apt-get update && xargs apt-get install -qq -y < packages.txt
-#RUN apt-get update && xargs apt-get install -qq -y --no-install-recommends < packages.txt
 
-RUN apt-get update && xargs -r packages.txt apt-get install -qq -y 
+# This works
+# RUN apt-get update && xargs apt-get install -qq -y --no-install-recommends < packages.txt
+
+RUN apt-get update && xargs -a packages.txt apt-get install --no-install-recommends -qq -y
 
 
 ##################################################

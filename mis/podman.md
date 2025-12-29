@@ -3,7 +3,7 @@
 alias docker=podman
 ```
 
-Podman uses `Buildah`(1) internally to create container images. 
+Podman uses `Buildah`(1) internally to create container images.
 Both tools share image (not container) storage, hence each can use or manipulate images (but not containers) created by the other.
 
 

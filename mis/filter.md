@@ -7,27 +7,27 @@ As fucking docker company restricted IRAN we have two options.
 
 ## Use Mirror registry
 
-Using mirror instead of default docker registry 
+Using mirror instead of default docker registry
 
-    $ cat /etc/docker/daemon.json 
+    $ cat /etc/docker/daemon.json
     {
             "registry-mirrors": ["https://registry.docker.ir"]
     }
-    
+
     sudo systemctl daemon-reload
     sudo systemctl restart docker
-    
+
 
 ## Write directly to config file
 ```
-cat << EOF | sudo tee /etc/docker/daemon.json 
+cat << EOF | sudo tee /etc/docker/daemon.json
 {
     "registry-mirrors": ["https://registry.docker.ir"]
 }
 EOF
 ```
 
-If its not work use proxy for docker 
+If its not work use proxy for docker
 
 ## Set proxy
 
@@ -37,10 +37,7 @@ If its not work use proxy for docker
     Environment="HTTP_PROXY=http://192.168.5.35:8119"
     Environment="HTTPS_PROXY=http://192.168.5.35:8119"
     Environment="NO_PROXY=localhost,127.0.0.1,docker-registry.example.com,.corp"
-    
+
 
     $ sudo systemctl daemon-reload
     $ sudo systemctl restart docker
-
-
-

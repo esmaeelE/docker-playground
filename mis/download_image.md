@@ -14,7 +14,7 @@ chmod +x download-frozen-image-v2.sh; mv download-frozen-image-v2.sh /usr/local/
 ### load image
 ```tar -cvC hello . | docker load```
 
-## Load image to local docker 
+## Load image to local docker
 
 load directly
 ```
