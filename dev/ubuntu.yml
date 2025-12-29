@@ -7,8 +7,8 @@ services:
     # image: ubuntu:latest
     # image: ubuntu_container:working
     image: ssh-container
-    stdin_open: true  # docker run -i
-    tty: true   # docker run -t, Keep the container running in the foreground
+    stdin_open: true # docker run -i
+    tty: true # docker run -t, Keep the container running in the foreground
     restart: unless-stopped
     ports:
       # These ports are in format <host-port>:<container-port>
